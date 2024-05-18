@@ -5,17 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".InputFragment">
 
-    <!-- TODO: Update blank fragment layout -->
 
 
     <EditText
         android:id="@+id/usrTextIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="text"
         android:text="Введите ваш текст"
-        android:autofillHints="Девять"/>
+        android:layout_marginStart="30dp"/>
+
+    <Button
+        android:id="@+id/InputBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="30dp"
+        android:text="Отправить" />
+
 </RelativeLayout>
