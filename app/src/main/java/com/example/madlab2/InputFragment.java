@@ -34,11 +34,11 @@ public class InputFragment extends Fragment {
                              Bundle savedInstanceState) {
         View InputView = inflater.inflate(R.layout.fragment_input, container, false);
         EditText InputText = (EditText) InputView.findViewById(R.id.usrTextIn);
-        Button SendText = (Button) InputText.findViewById(R.id.InputBtn);
+        Button SendText = (Button) InputView.findViewById(R.id.InputBtn);
         SendText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String outputtext = (String) InputText.getText().toString();
+                String outputtext = InputText.getText().toString();
                 fragmentSendDataListener.onSendData(outputtext);
             }
         });
